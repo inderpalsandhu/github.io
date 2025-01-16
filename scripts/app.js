@@ -26,13 +26,14 @@
         MainParagraph.textContent = SecondString;
         MainContent.appendChild(MainParagraph);
 
-        let DocumentBody = document.body;
+
+
         let Article = document.createElement("article");
         let ArticleParagraph = `<p id="ArticleParagraph" class="mt-3"> This is my article paragraph</p>`;
 
-
-        ArticleParagraph.setAttribute("class", "container");
         Article.innerHTML = ArticleParagraph;
+        Article.setAttribute("class", "container");
+        let DocumentBody = document.body;
         DocumentBody.appendChild(Article);
     }
 
