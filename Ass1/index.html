@@ -5,12 +5,15 @@
     <meta name="author" content="Inderpal Sandhu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
 <header>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Volunteer Connect</a>
@@ -24,6 +27,7 @@
                     <li class="nav-item"><a class="nav-link" href="events.html"><i class="fa-solid fa-calendar"></i> Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donate.html"><i class="fa-solid fa-dollar-sign"></i> Donate</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-circle-chevron-down"></i>
                             More
@@ -43,6 +47,8 @@
     <div class="text-center">
         <h1>Welcome to Volunteer Connect</h1>
         <p>Your gateway to community service and volunteering opportunities.</p>
+
+        <!-- Bootstrap Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -69,16 +75,23 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <!-- Call to Action -->
         <a href="opportunities.html" class="btn btn-primary mt-3">Get Involved</a>
     </div>
+
 </main>
 
 <footer class="footer mt-auto py-3 bg-light">
     <div class="container text-center">
         <span>&copy; 2025 Volunteer Connect. All rights reserved.</span>
     </div>
+    <div class="mt-2">
+        <a href="privacy.html" class="text-muted mr-3">Privacy Policy</a>
+        <a href="terms.html" class="text-muted">Terms of Service</a>
+    </div>
 </footer>
 
+<!-- Scripts -->
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/main.js"></script>
 </body>

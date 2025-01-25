@@ -2,8 +2,9 @@
 
 /**
  * Main JavaScript file for Volunteer Connect
- * Author: Your Name
- * Date: YYYY-MM-DD
+ * Author: Inderpal Singh Sandhu, Tadbhav Marken
+ * Date: 2025-01-22
+ * Student id- 100930926,100922796
  */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -169,8 +170,37 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    /**
+     * Adds a "Back to Top" button and handles its visibility and functionality.
+     */
+    function setupBackToTopButton() {
+        // Create the Back to Top button
+        const backToTopButton = document.createElement("button");
+        backToTopButton.id = "backToTop";
+        backToTopButton.innerHTML = "&#8679;"; // Unicode for up arrow
+        backToTopButton.style.display = "none"; // Initially hidden
+        document.body.appendChild(backToTopButton);
+
+        // Show or hide the button based on scroll position
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 0) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        // Smooth scroll to the top when clicked
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
+
     // Highlight the active page in the navbar
     highlightNavbar();
+
+    // Add the "Back to Top" button
+    setupBackToTopButton();
 
     // Switch to page-specific functionality based on the document title
     switch (document.title) {

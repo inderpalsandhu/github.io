@@ -5,18 +5,22 @@
     <meta name="author" content="Inderpal Sandhu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming Events</title>
+    <!-- Linking External Stylesheets -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
 <header>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Volunteer Connect</a>
+            <!-- Navbar Toggler for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -24,10 +28,12 @@
                     <li class="nav-item"><a class="nav-link" href="events.html"><i class="fa-solid fa-calendar"></i> Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donate.html"><i class="fa-solid fa-dollar-sign"></i> Donate</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-circle-chevron-down"></i>
                             More
                         </a>
+                        <!-- Dropdown Menu -->
                         <ul class="dropdown-menu" aria-labelledby="moreDropdown">
                             <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
                             <li><a class="dropdown-item" href="terms.html">Terms of Service</a></li>
@@ -40,7 +46,10 @@
 </header>
 
 <main class="container mt-4">
+    <!-- Page Title -->
     <h1 class="text-center mb-4">Upcoming Events</h1>
+
+    <!-- Filter Dropdown -->
     <div class="mb-4">
         <label for="categoryFilter" class="form-label">Filter by Category:</label>
         <select class="form-select" id="categoryFilter">
@@ -56,11 +65,16 @@
 </main>
 
 <footer class="footer mt-auto py-3 bg-light">
+    <!-- Footer Content -->
     <div class="container text-center">
         <span>&copy; 2025 Volunteer Connect. All rights reserved.</span>
     </div>
+    <div class="mt-2">
+        <a href="privacy.html" class="text-muted mr-3">Privacy Policy</a>
+        <a href="terms.html" class="text-muted">Terms of Service</a>
+    </div>
 </footer>
-
+<!-- Linking External Scripts -->
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
