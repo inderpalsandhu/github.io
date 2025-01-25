@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Author and meta information -->
     <meta name="author" content="Inderpal Sandhu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+
     <!-- Linking external stylesheets -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./css/style.css"> <!-- Custom styles -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> <!-- Bootstrap for responsiveness -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css"> <!-- FontAwesome for icons -->
 </head>
 <body>
 <header>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+            <!-- Website Logo -->
             <a class="navbar-brand" href="index.html">Volunteer Connect</a>
             <!-- Toggler for mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,16 +26,17 @@
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <!-- Navigation items -->
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="opportunities.html"><i class="fa-solid fa-handshake-angle"></i> Volunteer Now</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html"><i class="fa-solid fa-calendar"></i> Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="donate.html"><i class="fa-solid fa-dollar-sign"></i> Donate</a></li>
                     <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-circle-chevron-down"></i>
-                            More
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-circle-chevron-down"></i> More
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="moreDropdown">
                             <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
@@ -49,9 +53,10 @@
     <!-- Page Title -->
     <h1 class="text-center mb-4">About Us</h1>
     <div class="row">
+        <!-- Image Section -->
         <div class="col-md-6">
-            <img src="images/Picture.jpg" class="img-fluid rounded" alt="About Us" height="300" width="300">
             <img src="images/tadbhav.jpeg" class="img-fluid rounded" alt="About Us" height="300" width="300">
+            <img src="images/Picture.jpg" class="img-fluid rounded" alt="About Us" height="300" width="300">
         </div>
         <!-- Content Section -->
         <div class="col-md-6">
@@ -73,18 +78,29 @@
         </div>
     </div>
 </main>
-<!-- Footer Section -->
+
 <footer class="footer mt-auto py-3 bg-light">
+    <!-- Footer Section -->
     <div class="container text-center">
         <span>&copy; 2025 Volunteer Connect. All rights reserved.</span>
     </div>
+    <!-- Links -->
     <div class="mt-2">
         <a href="privacy.html" class="text-muted mr-3">Privacy Policy</a>
         <a href="terms.html" class="text-muted">Terms of Service</a>
     </div>
 </footer>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 <!-- Linking external scripts -->
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./js/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
+<script src="./js/main.js"></script> <!-- Custom JavaScript -->
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </body>
 </html>

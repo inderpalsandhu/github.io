@@ -2,7 +2,7 @@
 
 /**
  * Main JavaScript file for Volunteer Connect
- * Author: Inderpal Singh Sandhu, Tadbhav Marken
+ * Author: Tadbhav Marken,Inderpal
  * Date: 2025-01-22
  * Student id- 100930926,100922796
  */
@@ -166,41 +166,12 @@ document.addEventListener("DOMContentLoaded", () => {
             // Redirect to Home Page after 5 seconds
             setTimeout(() => {
                 window.location.href = "index.html";
-            }, 5000);
-        });
-    }
-
-    /**
-     * Adds a "Back to Top" button and handles its visibility and functionality.
-     */
-    function setupBackToTopButton() {
-        // Create the Back to Top button
-        const backToTopButton = document.createElement("button");
-        backToTopButton.id = "backToTop";
-        backToTopButton.innerHTML = "&#8679;"; // Unicode for up arrow
-        backToTopButton.style.display = "none"; // Initially hidden
-        document.body.appendChild(backToTopButton);
-
-        // Show or hide the button based on scroll position
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 0) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        });
-
-        // Smooth scroll to the top when clicked
-        backToTopButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            }, 2000);
         });
     }
 
     // Highlight the active page in the navbar
     highlightNavbar();
-
-    // Add the "Back to Top" button
-    setupBackToTopButton();
 
     // Switch to page-specific functionality based on the document title
     switch (document.title) {
@@ -225,5 +196,19 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
         default:
             console.log("No specific setup required for this page.");
+    }
+
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 });
