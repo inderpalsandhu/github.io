@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "DisplayName" : "Bilbo Baggins",
+      "EmailAddress" : "bilbo@durhamcollege.ca",
+      "Username" : "bbaggins",
+      "Password" : "123456"
+    } ,
+    {
+      "DisplayName" : "Arjan Dhillon",
+      "EmailAddress" : "Arjan@gmail.ca",
+      "Username" : "Arjan",
+      "Password" : "741852"
+    } ,
+    {
+      "DisplayName" : "Arpan Sandhu",
+      "EmailAddress" : "Arpansandhu@gmail.ca",
+      "Username" : "IArpan",
+      "Password" : "654321"
+    }
+  ]
+
+
+}
