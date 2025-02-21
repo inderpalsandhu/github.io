@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Community Park Cleanup",
+    "description": "Join us for a day of cleaning and beautifying the local park. All materials provided.",
+    "category": "Environment",
+    "date": "2025-04-15"
+  },
+  {
+    "title": "Food Bank Volunteer",
+    "description": "Help organize and distribute food to those in need at the local food bank.",
+    "category": "Community Service",
+    "date": "2025-05-10"
+  },
+  {
+    "title": "Literacy Program Tutor",
+    "description": "Assist children and adults in improving their reading and writing skills.",
+    "category": "Education",
+    "date": "2025-06-05"
+  },
+  {
+    "title": "Tree Planting Initiative",
+    "description": "Participate in planting trees around the city to promote a greener environment.",
+    "category": "Environment",
+    "date": "2025-07-20"
+  },
+  {
+    "title": "Senior Companionship Program",
+    "description": "Spend time with seniors in assisted living facilities and engage in various activities.",
+    "category": "Health & Wellness",
+    "date": "2025-08-12"
+  }
+]
