@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,60 +10,64 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
-<body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Volunteer Connect</a>
-        </div>
-    </nav>
-</header>
 
-<main class="container mt-5">
-    <h1 class="text-center">Login</h1>
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <form id="loginForm">
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" required>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Volunteer Connect</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <h1 class="text-center">Login</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <div id="loginError" class="alert alert-danger mt-3 d-none" role="alert">
+                    Invalid username or password. Please try again.
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" required>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Login</button>
-            </form>
-            <div id="loginError" class="alert alert-danger mt-3 d-none" role="alert">
-                Invalid username or password. Please try again.
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<footer class="footer mt-auto py-3 bg-light">
-    <div class="container text-center">
-        <span>&copy; 2025 Volunteer Connect. All rights reserved.</span>
-    </div>
-</footer>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span>&copy; 2025 Volunteer Connect. All rights reserved.</span>
+        </div>
+    </footer>
 
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Login form submission
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const username = document.getElementById('username').value.trim();
-        const password = document.getElementById('password').value.trim();
-        const loginError = document.getElementById('loginError');
 
-        // Simple authentication check (Replace with real authentication in production)
-        if (username === 'admin' && password === 'password') {
-            sessionStorage.setItem('loggedInUser', username);
-            window.location.href = 'index.html'; // Redirect to homepage after login
-        } else {
-            loginError.classList.remove('d-none');
-        }
-    });
-</script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Login form submission
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const loginError = document.getElementById('loginError');
+
+            // Simple authentication check (Replace with real authentication in production)
+            if (username === 'admin' && password === 'password') {
+                sessionStorage.setItem('loggedInUser', username);
+                sessionStorage.setItem('showWelcome', 'true'); // Added this flag
+                window.location.href = 'index.html'; // Redirect to homepage after login
+            } else {
+                loginError.classList.remove('d-none');
+            }
+        });
+    </script>
 </body>
+
 </html>
