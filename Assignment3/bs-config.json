@@ -1,0 +1,14 @@
+
+{
+  "server": {
+    "baseDir": "./",
+    "routes": {
+      "/views/pages": "views/pages",
+      "/data": "data",
+      "/scripts": "scripts",
+      "/content": "content"
+    }
+  },
+  "files": ["index.html", "views/**/*", "scripts/**/*", "data/**/*", "content/**/*"],
+  "rewrites": [{ "from": ".*", "to": "/index.html" }]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Charity Run",
+    "description": "Join our charity run to support local causes.",
+    "date": "2025-03-12",
+    "category": "fundraiser"
+  },
+  {
+    "title": "Community Workshop",
+    "description": "Learn community-building strategies from experts.",
+    "date": "2025-03-18",
+    "category": "workshop"
+  },
+  {
+    "title": "Park Cleanup",
+    "description": "Help clean up the local park and make it greener.",
+    "date": "2025-03-25",
+    "category": "cleanup"
+  },
+  {
+    "title": "Blood Donation Drive",
+    "description": "Donate blood and help save lives in your community.",
+    "date": "2025-04-05",
+    "category": "fundraiser"
+  },
+  {
+    "title": "Tree Planting Event",
+    "description": "Join us to plant trees for a sustainable future.",
+    "date": "2025-04-12",
+    "category": "cleanup"
+  },
+  {
+    "title": "Digital Literacy Workshop",
+    "description": "Improve your digital skills with expert-led workshops.",
+    "date": "2025-04-20",
+    "category": "workshop"
+  }
+]
