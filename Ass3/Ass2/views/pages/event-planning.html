@@ -1,0 +1,32 @@
+<!-- views/pages/plan-event.html -->
+<main class="container mt-5">
+    <h1 class="text-center mb-4">Plan a New Event</h1>
+    <form id="eventForm">
+        <div class="mb-3">
+            <label for="title" class="form-label">Event Title</label>
+            <input type="text" class="form-control" id="title" required />
+        </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" required />
+        </div>
+        <div class="mb-3">
+            <label for="time" class="form-label">Time</label>
+            <input type="time" class="form-control" id="time" required />
+        </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" required />
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Event</button>
+    </form>
+
+    <hr />
+
+    <h2 class="mt-5">Planned Events</h2>
+    <div id="plannedEvents" class="row mt-3"></div>
+</main>

@@ -1,0 +1,35 @@
+<h1 class="text-center mb-4">Volunteer Opportunities</h1>
+
+<div class="mb-4">
+    <label for="opportunityFilter" class="form-label">Filter by Category:</label>
+    <select class="form-select" id="opportunityFilter">
+        <option value="all">All</option>
+        <option value="education">Education</option>
+        <option value="environment">Environment</option>
+        <option value="health">Health</option>
+    </select>
+</div>
+
+<div class="mb-4">
+    <label for="sortOpportunities" class="form-label">Sort By:</label>
+    <select class="form-select" id="sortOpportunities">
+        <option value="">None</option>
+        <option value="date-newest">Date (Newest First)</option>
+        <option value="date-oldest">Date (Oldest First)</option>
+        <option value="category-az">Category A–Z</option>
+        <option value="category-za">Category Z–A</option>
+    </select>
+</div>
+
+<div class="mb-4">
+    <form class="d-flex" id="searchForm">
+        <input class="form-control me-2" type="search" placeholder="Search opportunities..." id="searchInput" aria-label="Search">
+        <button class="btn btn-outline-primary me-2" type="submit">Search</button>
+        <button class="btn btn-outline-secondary" type="reset" onclick="location.reload()">Reset</button>
+    </form>
+</div>
+
+
+<div class="row" id="opportunityList">
+    <!-- Opportunities will load here -->
+</div>

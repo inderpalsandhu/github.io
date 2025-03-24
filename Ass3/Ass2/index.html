@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Inderpal Sandhu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Volunteer Connect - Your gateway to community service and volunteering opportunities. Join us to make a difference!" />
+  <meta name="keywords" content="volunteer, community service, events, opportunities" />
+  <title>Volunteer Connect</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/Ass2/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Ass2/node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="/Ass2/css/style.css">
+</head>
+
+<body>
+  <header></header> <!-- Dynamic header -->
+  <main></main>    <!-- Dynamic page content -->
+
+  <div id="welcomePopup" class="popup-message"></div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Scripts -->
+<script src="/Ass2/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./js/main.js"></script>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const showWelcome = sessionStorage.getItem('showWelcome');
+      const username = sessionStorage.getItem('loggedInUser');
+
+      if (showWelcome === 'true' && username) {
+        const popup = document.getElementById('welcomePopup');
+        popup.textContent = `Welcome ${username}!`;
+        popup.style.display = 'block';
+        sessionStorage.removeItem('showWelcome');
+
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 3000);
+      }
+    });
+  </script>
+</body>
+</html>

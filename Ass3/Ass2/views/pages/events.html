@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Inderpal Sandhu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body>
+    <h1 class="text-center mb-4">Upcoming Events</h1>
+
+    <div class="mb-4">
+        <label for="categoryFilter" class="form-label">Filter by Category:</label>
+        <select class="form-select" id="categoryFilter">
+            <option value="all">All</option>
+            <option value="fundraiser">Fundraisers</option>
+            <option value="workshop">Workshops</option>
+            <option value="cleanup">Cleanups</option>
+        </select>
+    </div>
+    
+    <div class="row" id="eventsList">
+        <!-- Events will be loaded dynamically here -->
+    </div>
+    
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/main.js"></script> <!-- Updated JS file with AJAX -->
+</body>
+</html>

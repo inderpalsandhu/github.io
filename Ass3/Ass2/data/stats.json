@@ -1,0 +1,27 @@
+{
+    "monthlyVisitors": [300, 400, 450, 600, 700, 800, 850, 870, 890, 1000, 1200, 1500],
+    "donationTypes": {
+      "monetary": 32000,
+      "material": 25000,
+      "time": 10000
+    },
+    "volunteerTypes": {
+      "Events": 40,
+      "Fundraisers": 25,
+      "Donations": 20,
+      "Volunteers": 15
+    },
+    "participantCounts": {
+      "Charity Run": 200,
+      "Food Drive": 150,
+      "Art Auction": 100,
+      "Book Sale": 80
+    },
+    "fundsRaised": {
+      "Charity Run": 15000,
+      "Food Drive": 12000,
+      "Art Auction": 10000,
+      "Book Sale": 6000
+    }
+  }
+  

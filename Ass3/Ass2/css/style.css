@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    /* Light gray background */
+    color: #212529;
+    /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #0d6efd;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar .nav-link {
+    color: #007bff;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+h1,
+h2,
+h3 {
+    color: #007bff;
+    /* Bootstrap primary blue */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for navbar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #0056b3 !important;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    /* Light gray border */
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Home Page Styles */
+.carousel img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-indicators button {
+    background-color: #007bff;
+}
+
+.carousel-indicators button.active {
+    background-color: #0056b3;
+}
+
+/* Opportunities and Events Page Styles */
+.card {
+    border: 1px solid #dee2e6;
+    /* Light gray border */
+    border-radius: 5px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle hover shadow */
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Form Styles */
+form label {
+    font-weight: bold;
+    color: #212529;
+}
+
+form .btn {
+    font-size: 1rem;
+}
+
+#thankYouMessage {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #28a745;
+    /* Bootstrap success green */
+}
+
+/* Back to Top Button */
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #080809;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    width: 60px;
+    /* Set width for a circular shape */
+    height: 60px;
+    /* Set height for a circular shape */
+    border-radius: 50%;
+    /* Make the button circular */
+    font-size: 18px;
+    /* Increase font size */
+    text-align: center;
+    /* Center content */
+    line-height: 60px;
+    /* Vertically center content */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+.gallery-image {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.popup-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
